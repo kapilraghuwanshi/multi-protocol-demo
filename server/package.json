@@ -1,0 +1,18 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "a backend server to be used in multiple client-server methods demo",
+  "license": "ISC",
+  "author": "Kapil Raghuwanshi",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start:graphql": "node graphql-server.js",
+    "start:websocket": "node websocket-server.js"
+  },
+  "dependencies": {
+    "apollo-server": "^3.13.0",
+    "cors": "^2.8.5",
+    "graphql": "^16.12.0"
+  }
+}
