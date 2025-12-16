@@ -1,6 +1,6 @@
 import './App.css'
 import { Routes, Route, Link } from "react-router-dom";
-//import WebSocketDemo from "./pages/GraphQLDemo";
+import WebSocketDemo from "./pages/GraphQLDemo";
 import GraphQLDemo from "./pages/GraphQLDemo";
 // import WebRTCDemo from "./pages/WebRTCDemo";
 // import GRPCDemo from "./pages/GRPCDemo";
@@ -15,7 +15,7 @@ function App() {
       <nav>
         Learn
         <ul>
-          {/* <li><Link to="/websocket">WebSocket</Link></li> */}
+          <li><Link to="/websocket">WebSocket</Link></li>
           <li><Link to="/graphql">GraphQL</Link></li>
           {/* <li><Link to="/webrtc">WebRTC</Link></li>
           <li><Link to="/grpc">gRPC</Link></li>
@@ -26,7 +26,7 @@ function App() {
         </ul>
       </nav>
       <Routes>
-        {/* <Route path="/websocket" element={<WebSocketDemo />} /> */}
+        <Route path="/websocket" element={<WebSocketDemo />} />
         <Route path="/graphql" element={<GraphQLDemo />} />
         {/* <Route path="/webrtc" element={<WebRTCDemo />} />
         <Route path="/grpc" element={<GRPCDemo />} />
