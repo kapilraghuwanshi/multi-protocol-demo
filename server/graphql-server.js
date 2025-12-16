@@ -1,5 +1,5 @@
 // server/graphql-server.js
-import { ApolloServer, gql } from 'apollo-server';
+import { ApolloServer, gql } from 'apollo-server'; // install apollo-server
 import cors from 'cors';
 
 // In-memory user store (for learning/demo purposes)

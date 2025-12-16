@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { ApolloClient, InMemoryCache, ApolloProvider, useQuery, useMutation, gql } from "@apollo/client";
 
+// install - @apollo/client, graphql
+// test on postman too, same POST HTTP endpoint
 const client = new ApolloClient({
   uri: "http://localhost:4000", // adjust if running remotely
   cache: new InMemoryCache(),
