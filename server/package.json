@@ -8,7 +8,12 @@
   "main": "index.js",
   "scripts": {
     "start:graphql": "node graphql-server.js",
-    "start:websocket": "node websocket-server.js"
+    "start:websocket": "node websocket-server.js",
+    "start:webrtc": "node webrtc-server.js",
+    "start:grpc": "node grpc-server.js",
+    "start:sse": "node sse-server.js",
+    "start:polling": "node polling-server.js",
+    "start:webhook": "node webhook-server.js"
   },
   "dependencies": {
     "apollo-server": "^3.13.0",
