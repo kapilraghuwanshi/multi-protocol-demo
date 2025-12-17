@@ -7,7 +7,7 @@ import GRPCDemo from "./pages/GRPCDemo";
 import WebhookDemo from "./pages/WebhookDemo";
 import SSEdemo from "./pages/SSEdemo";
 import PollingDemo from "./pages/PollingDemo";
-// import ConnectionPoolDemo from "./pages/ConnectionPoolDemo";
+import ConnectionPoolDemo from "./pages/ConnectionPoolDemo";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
           <li><Link to="/sse">SSE</Link></li>
           <li><Link to="/webhook">Webhook</Link></li>
           <li><Link to="/polling">Polling</Link></li>
-          {/* <li><Link to="/pooling">Connection Pooling</Link></li> */}
+          <li><Link to="/pooling">Connection Pooling</Link></li>
         </ul>
       </nav>
       <Routes>
@@ -33,7 +33,7 @@ function App() {
         <Route path="/sse" element={<SSEdemo />} />
         <Route path="/webhook" element={<WebhookDemo />} />
         <Route path="/polling" element={<PollingDemo />} />
-        {/* <Route path="/pooling" element={<ConnectionPoolDemo />} /> */}
+        <Route path="/pooling" element={<ConnectionPoolDemo />} />
       </Routes>
     </div>
   );

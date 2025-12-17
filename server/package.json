@@ -14,7 +14,8 @@
     "start:grpc-proxy": "node grpc-http-proxy.js",
     "start:sse": "node sse-server.js",
     "start:polling": "node polling-server.js",
-    "start:webhook": "node webhook-server.js"
+    "start:webhook": "node webhook-server.js",
+    "start:pool": "node connectionpool-server.js"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.14.3",
