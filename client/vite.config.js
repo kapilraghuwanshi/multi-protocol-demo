@@ -20,6 +20,11 @@ export default defineConfig({
         changeOrigin: true,
         secure: false,
       },
+      '/poll': {
+        target: 'http://localhost:5700',
+        changeOrigin: true,
+        secure: false,
+      },
     },
   },
 })

@@ -3,6 +3,11 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 
+// Next Goal:
+// Expose your local server publicly (ngrok) so GitHub can POST to it.
+// Register a webhook in your GitHub repo pointing to the ngrok URL
+// HMAC verification - (compare x-hub-signature-256 to HMAC-SHA256 of raw request body using a secret).
+
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
