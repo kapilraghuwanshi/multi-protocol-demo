@@ -1,0 +1,40 @@
+syntax = "proto3";
+package greeter;
+
+message HelloRequest {
+  string name = 1;
+}
+message HelloReply {
+  string message = 1;
+  string time = 2;
+}
+
+message TimeRequest {
+  int32 count = 1;
+  int32 intervalMs = 2;
+}
+
+message TimeResponse {
+  string time = 1;
+  int32 seq = 2;
+}
+
+message CreateUserRequest {
+  string name = 1;
+  string email = 2;
+  string imagePath = 3;
+}
+
+message User {
+  string id = 1;
+  string name = 2;
+  string email = 3;
+  string imagePath = 4;
+  string createdAt = 5;
+}
+
+service Greeter {
+  rpc SayHello(HelloRequest) returns (HelloReply);
+  rpc ServerTime(TimeRequest) returns (stream TimeResponse);
+  rpc CreateUser(CreateUserRequest) returns (User);
+}
